@@ -8,6 +8,7 @@
     "start": "node index.js"
   },
    "dependencies": {
+     "serverless-http": "latest",
     "express": "latest",
     "cors": "latest",
     "tradingeconomics": "latest"
