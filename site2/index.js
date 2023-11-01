@@ -1,7 +1,9 @@
 'use strict'; 
 const express=require('express');
+var cors = require('cors')
 const te = require('tradingeconomics');
 const app=express();
+app.use(cors())
 const key="46aa8c0058bb4ca:m6o9do7g9w6h0un";
 const hostname = '127.0.0.1';
 const port = 3000;
