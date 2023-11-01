@@ -47,9 +47,14 @@ return [top50Export,top50Import]
   }
 }
 
-app.get('/', function (req, res) {
-  res.sendFile(__dirname+'/index1.html');  //load homepage...
-});
+export default function handler(request, response) {
+response.sendFile(__dirname+'/index1.html');
+}
+
+
+//app.get('/', function (req, res) {
+  //res.sendFile(__dirname+'/index1.html');  //load homepage...
+//});
 
 app.post('/country', async (req, res) => {
   try {
