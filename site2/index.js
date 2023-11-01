@@ -1,4 +1,5 @@
 'use strict'; 
+const serverless = require('serverless-http');
 const express=require('express');
 var cors = require('cors')
 const te = require('tradingeconomics');
@@ -55,6 +56,8 @@ return [top50Export,top50Import]
 app.get('/', function (req, res) {
   res.sendFile(__dirname+'/index1.html');  //load homepage...
 });
+
+module.exports.handler = serverless(app);
 
 app.post('/country', async (req, res) => {
   try {
