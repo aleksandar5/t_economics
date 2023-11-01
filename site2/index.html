@@ -64,7 +64,7 @@
     }
 	
     function showCountry(country){ //central part of script, show table with data
-	    alert(country)
+	   // alert(country)
 	  const trade=parseInt(document.getElementById("expImp").value);		//export or import are selected...
       document.getElementById("expImp").disabled = false;
      
@@ -103,6 +103,7 @@
 	
 //    let data = await response.json();  // waitting for response... and call function to show data... 
 	  let data = await JSON.parse(JSON.stringify(response));
+	  alert(data)
       currentCountry = data.message;      
       showCountry(currentCountry);
     }
