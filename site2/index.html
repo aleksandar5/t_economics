@@ -100,7 +100,8 @@
       body: JSON.stringify( {sendCountryName : nameOfSelectedCountry}) 
     }) 
 	
-    let data = await response.json();  // waitting for response... and call function to show data... 
+//    let data = await response.json();  // waitting for response... and call function to show data... 
+	  let data = await JSON.parse(JSON.stringify(response));
       currentCountry = data.message;      
       showCountry(currentCountry);
     }
