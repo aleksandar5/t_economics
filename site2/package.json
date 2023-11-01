@@ -1,5 +1,10 @@
 {
-  "name": "t_economics_node",
-  "version": "1.0.0"
- 
+"name": "t-economics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {"node": "14.x"},
+ "scripts": {   
+    "start": "node index.js"
+  }
 }
