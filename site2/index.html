@@ -104,8 +104,8 @@
 //    let data = await response.json();  // waitting for response... and call function to show data... 
 	  let data = await JSON.parse(JSON.stringify(response));
 	  alert(data)
-      currentCountry = data.message;      
-      showCountry(currentCountry);
+  //    currentCountry = data.message;      
+      showCountry(data.message);
     }
 
     function changeExportImport() { // show export or import for current countrey
