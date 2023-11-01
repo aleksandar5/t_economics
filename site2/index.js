@@ -48,7 +48,7 @@ return [top50Export,top50Import]
 }
 
 export default function handler(request, response) {
-response.sendFile(__dirname+'/index1.html');
+return response.sendFile(__dirname+'/index1.html');
 }
 
 
