@@ -104,7 +104,8 @@
 //    let data = await response.json();  // waitting for response... and call function to show data... 
 	  let data = await JSON.parse(JSON.stringify(response));
 	//  alert(data)
-      currentCountry = data.message;      
+      currentCountry = data.message;
+	  alert(currentCountry)
       showCountry(currentCountry);
     }
 
