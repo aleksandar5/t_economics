@@ -7,7 +7,7 @@ const app=express();
 app.use(cors())
 const key="46aa8c0058bb4ca:m6o9do7g9w6h0un";
 //const hostname = '127.0.0.1';
-//const port = 3000;
+const port = 3000;
 
 app.use(express.static(__dirname)); //now you can load additional files in homepage...
 app.use(express.text())  //you can receive string with country name...
@@ -72,5 +72,5 @@ app.post('/country', async (req, res) => {
 });
 
 //module.exports.handler = serverless(app);
-//app.listen(port ); 
+app.listen(port ); 
 //console.log('Running at Port ' + port);
