@@ -57,7 +57,7 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname+'/index1.html');  //load homepage...
 });
 
-module.exports.handler = serverless(app);
+
 
 app.post('/country', async (req, res) => {
   try {
@@ -71,5 +71,6 @@ app.post('/country', async (req, res) => {
   }
 });
 
+module.exports.handler = serverless(app);
 //app.listen(port ); 
 //console.log('Running at Port ' + port);
