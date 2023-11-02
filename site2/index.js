@@ -1,12 +1,10 @@
 'use strict'; 
-//const serverless = require('serverless-http');
 const express=require('express');
 var cors = require('cors')
 const te = require('tradingeconomics');
 const app=express();
 app.use(cors())
 const key="46aa8c0058bb4ca:m6o9do7g9w6h0un";
-//const hostname = '127.0.0.1';
 const port = 3000;
 
 app.use(express.static(__dirname)); //now you can load additional files in homepage...
@@ -48,16 +46,9 @@ return [top50Export,top50Import]
   }
 }
 
-//export default function handler(request, response) {
-//return response.sendFile(__dirname+'/index1.html');
-//}
-
-
 app.get('/', function (req, res) {
-  res.sendFile(__dirname+'/index1.html');  //load homepage...
+  res.sendFile(__dirname+'/index.html');  //load homepage...
 });
-
-
 
 app.post('/country', async (req, res) => {
   try {
@@ -71,6 +62,5 @@ app.post('/country', async (req, res) => {
   }
 });
 
-//module.exports.handler = serverless(app);
-app.listen(port ); 
-//console.log('Running at Port ' + port);
+app.listen(port); 
+
