@@ -7,8 +7,7 @@
  "scripts": {   
     "start": "node index.js"
   },
-   "dependencies": {
-     "serverless-http": "latest",
+   "dependencies": {   
     "express": "latest",
     "cors": "latest",
     "tradingeconomics": "latest"
