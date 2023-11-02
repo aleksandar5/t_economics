@@ -1,5 +1,5 @@
 'use strict'; 
-const serverless = require('serverless-http');
+//const serverless = require('serverless-http');
 const express=require('express');
 var cors = require('cors')
 const te = require('tradingeconomics');
@@ -71,6 +71,6 @@ app.post('/country', async (req, res) => {
   }
 });
 
-module.exports.handler = serverless(app);
+//module.exports.handler = serverless(app);
 //app.listen(port ); 
 //console.log('Running at Port ' + port);
